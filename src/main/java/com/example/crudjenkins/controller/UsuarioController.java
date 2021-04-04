@@ -21,7 +21,7 @@ public class UsuarioController {
 
 	@GetMapping("/ola")
 	public String olaMundo() {
-		return "Olá Mundo";
+		return "Olá Mundo versão 2.0";
 	}
 
 	public UsuarioController(UsuarioRepository usuarioRepository) {
