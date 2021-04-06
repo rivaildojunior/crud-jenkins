@@ -17,6 +17,7 @@ import com.example.crudjenkins.repository.UsuarioRepository;
 @RequestMapping("/usuarios")
 public class UsuarioController {
 
+	// teste
 	private UsuarioRepository usuarioRepository;
 
 	@GetMapping("/ola")
