@@ -20,10 +20,10 @@ public class UsuarioController {
 	// teste
 	private UsuarioRepository usuarioRepository;
 
-	@GetMapping("/ola")
-	public String olaMundo() {
-		return "Olá Mundo versão 2.0";
-	}
+	//@GetMapping("/ola")
+	//public String olaMundo() {
+	//	return "Olá Mundo versão 2.0";
+	//}
 
 	public UsuarioController(UsuarioRepository usuarioRepository) {
 		this.usuarioRepository = usuarioRepository;
@@ -38,6 +38,7 @@ public class UsuarioController {
 	@GetMapping("/{id}")
 	public ResponseEntity<Usuario> findById(@PathVariable Long id) {
 		return ResponseEntity.ok().body(this.usuarioRepository.findById(id).get());
+//return ResponseEntity.ok().body(this.usuarioRepository.findById(id).get());//
 	}
 
 	@GetMapping
